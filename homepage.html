@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+    </header>
+    <main>
+        <section id="profileSection" style="display: none;">
+            <h2>User Profile</h2>
+            <p id="username"></p>
+            <button id="logoutButton">Logout</button>
+        </section>
+
+        <section id="loginSection">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="loginUsername" required><br><br>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required><br><br>
+                <input type="checkbox" id="rememberCheckbox">
+                <label for="rememberCheckbox">Remember me</label><br><br>
+                <button type="submit">Login</button>
+            </form>
+            <p id="loginMessage"></p>
+
+            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        </section>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>
